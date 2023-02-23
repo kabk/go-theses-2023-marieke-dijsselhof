@@ -326,56 +326,6 @@ a:focus-visible {
   border-bottom: 4px solid black;
 }
 
-.sandwich {
-  position: fixed;
-
-}
-
-#menu {
-  background-color: aliceblue;
-  width: 100vw;
-  height: fit-content;
-  position: fixed;
-  top: 0;
-  text-align: center;
-  transition: top 0.3s;
-  text-decoration: none;
-
-}
-
-#menu u {
-  padding-top: 0px;
-}
-
-#menu a {
-  color: black;
-  font-family: sans-serif;
-  text-decoration: none;
-}
-
-#menu a :hover {
-  color: black;
-  font-family: sans-serif;
-  text-decoration: underline solid black 1px;
-}
-
-#menu li {
-  color: black;
-  font-family: sans-serif;
-  text-decoration: none;
-}
-
-#menu li : :hover {
-  text-decoration: underline solid black 1px;
-}
-
-.content {
-  top: 200px;
-  display: none;
-  overflow: hidden;
-  position: sticky;
-}
-
 
 
 h1 {
@@ -564,13 +514,69 @@ div.page-wrapper {
   padding: var(--margin);
 }
 
+li {
+  list-style-type: none;
+}
+
+.bib-list {
+  list-style-type: decimal;
+  list-style-position: outside;
+  color: rgb(154, 206, 251) !important;
+  font-family: 'apple';
+  font-size: 80%;
+  padding-bottom: 0.4em;
+}
+
+
 /* navigation */
 
-nav {}
-
-li :hover {
+.sandwich {
+  position: fixed;
+  top: 5.4vh;
   background-color: aliceblue;
+  width: 100vw;
+}
+
+#menu {
+  background-color: aliceblue;
+  width: 100vw;
+  height: fit-content;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  transition: top 0.3s;
+  text-decoration: none;
+}
+
+#menu u {
+  padding-top: 0px;
+}
+
+#menu a {
   color: black;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: black;
+  font-family: sans-serif;
+  text-decoration: underline solid black 1px;
+}
+
+#menu-list li {
+  color: black;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+#menu-list li:hover {}
+
+#menu-content {
+  top: 200px;
+  display: none;
+  overflow: hidden;
+  position: sticky;
 }
 
 /* content */

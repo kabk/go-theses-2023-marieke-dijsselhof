@@ -1,31 +1,29 @@
 $(document).ready(function () {
 
-    // functions go here
+    var coll = document.querySelector(".collapsible");
+    var content = document.getElementById("menu-content");
 
-    var coll = document.getElementsByClassName("collapsible");
-    var menu = document.getElementById("menu");
-    var i;
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
+    coll.addEventListener("click", function () {
+        this.classList.toggle("active");
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+    var menuLinks = document.querySelectorAll("#menu-list li a");
+
+    for (var i = 0; i < menuLinks.length; i++) {
+        menuLinks[i].addEventListener("click", function (e) {
+            e.preventDefault();
             if (content.style.display === "block") {
                 content.style.display = "none";
-            } else {
-                content.style.display = "block";
             }
-        });
-    }
-
-    for (i = 0; i < menu.length; i++) {
-        menu[i].addEventListener("click", function () {
-            this.getElementById.toggle("active");
-            var content = this.firstElementChild;
-            if (content.style.display === "block") {
-            } else {
-                content.style.display = "none";
-            }
+            var target = $(this.hash);
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
         });
     }
 
@@ -42,6 +40,19 @@ $(document).ready(function () {
 
 });
 
+menuBtn.addEventListener('click', () => {
+    menuContent.classList.toggle('show');
+});
+
+window.addEventListener('scroll', () => {
+    const st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st > lastScrollTop) {
+        menuContent.style.top = '-200px';
+    } else {
+        menuContent.style.top = '0';
+    }
+    lastScrollTop = st <= 0 ? 0 : st;
+});
 
 
 function show() {
@@ -96,4 +107,3 @@ function videoScroll() {
     }
 
 }
-

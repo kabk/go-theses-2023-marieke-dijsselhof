@@ -83,19 +83,18 @@
 
 	<div class="sandwich" style="z-index: 10;">
 		<button type="button" style="color:black; font-size: 1.5em;" class="collapsible" id="menu">MENU</button>
-		<div class="content" id="menu" style="top:0rem;">
+		<div class="content" id="menu-content">
 			<nav>
-				<ul id="menu" style="background-color:aliceblue; padding-top: 2em; padding-bottom: 2em;">
-					<a href="#preface">Preface</a>
-					<a href="#intro">Introduction</a>
+				<ul id="menu-list">
+					<li><a href="#preface">Preface</a></li>
+					<li><a href="#intro">Introduction</a></li>
 					<li><a href="#toys">The Toys</a></li>
 					<li><a href="#magic">The Portal to Faith</a></li>
 					<li><a href="#myth">Mythical Belongings</a></li>
 					<li><a href="#queen">Queen of my Castle</a></li>
 					<li><a href="#horses">The Everlasting Plastic Horses</a></li>
-					<a href="#thanks">Special Thanks</a>
-					<a href="#biblio">Bibliography</a>
-
+					<li><a href="#thanks">Special Thanks</a></li>
+					<li><a href="#biblio">Bibliography</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -108,10 +107,10 @@
 			</div>
 			-->
 
-		<div style="height: 7em; background-image: linear-gradient(rgb(206, 206, 206), #c782ff); ">
+		<div id="preface" style="height: 7em; background-image: linear-gradient(rgb(206, 206, 206), #c782ff); ">
 		</div>
 
-		<article id="preface" style="position:relative; background-color: #c782ff;">
+		<article style="position:relative; background-color: #c782ff;">
 			<h2><span>Preface</span></h2>
 			<h3><span>Once upon a time...</span></h3>
 			<p><i>
@@ -205,9 +204,9 @@
 			</p>
 		</article>
 
-		<div style="height: 7em; background-image: linear-gradient( #c782ff, greenyellow)">
+		<div id="intro" style="height: 7em; background-image: linear-gradient( #c782ff, greenyellow)">
 		</div>
-		<article id="intro" style="position:relative; background-color: greenyellow;">
+		<article style="position:relative; background-color: greenyellow;">
 			<h2><span>Introduction</span></h2>
 			<h3><span>Faith in Toys</span></h3>
 			<p>
@@ -260,11 +259,11 @@
 
 		</article>
 
-		<div style="height: 7em; background-image: linear-gradient(greenyellow, #ff74bd)">
+		<div id="toys" style="height: 7em; background-image: linear-gradient(greenyellow, #ff74bd)">
 		</div>
 
 
-		<article id="toys" style="position:relative; background-color: #ff74bd;">
+		<article style="position:relative; background-color: #ff74bd;">
 
 			<h3><span>Chapter 1</span></h3>
 			<h2><span>The Toys </span></h2>
@@ -406,12 +405,12 @@
 			</p>
 		</article>
 
-		<div style="height: 7em; background-image: linear-gradient(#ff68b3, #c782ff)">
+		<div id="magic" style="height: 7em; background-image: linear-gradient(#ff68b3, #c782ff)">
 		</div>
 
 
 
-		<article id="magic" style="position:relative; background-color: #c782ff;">
+		<article style="position:relative; background-color: #c782ff;">
 
 			<h3><span>Chapter 2</span></h3>
 			<h2><span>The Portal to Faith</span></h2>
@@ -523,10 +522,10 @@
 			</p>
 		</article>
 
-		<div style="height: 7em; background-image: linear-gradient(#c782ff, greenyellow)">
+		<div id="myth" style="height: 7em; background-image: linear-gradient(#c782ff, greenyellow)">
 		</div>
 
-		<article id="myth" style="position:relative; background-color: greenyellow;">
+		<article style="position:relative; background-color: greenyellow;">
 			<h3><span>Chapter 3</span></h3>
 			<h2><span>Mythical Belongings</span></h2>
 			<h3><span>Communities of toys</span></h3>
@@ -656,10 +655,10 @@
 			</p>
 		</article>
 
-		<div style="height: 7em; background-image: linear-gradient(greenyellow,  #ff68b3)">
+		<div id="queen" style="height: 7em; background-image: linear-gradient(greenyellow,  #ff68b3)">
 		</div>
 
-		<article id="queen" style="position:relative; background-color: #ff68b3;">
+		<article style="position:relative; background-color: #ff68b3;">
 			<h3><span>Chapter 4</span></h3>
 			<h2><span>Queen of my Castle</span></h2>
 			<h3><span>Communities of toys</span></h3>
@@ -741,10 +740,10 @@
 			</p>
 		</article>
 
-		<div style="height: 7em; background-image: linear-gradient(#ff68b3,  #c782ff)">
+		<div id="horses" style="height: 7em; background-image: linear-gradient(#ff68b3,  #c782ff)">
 		</div>
 
-		<article id="horses" style="position:relative; background-color: #c782ff;">
+		<article style="position:relative; background-color: #c782ff;">
 			<h3><span>Chapter 5</span></h3>
 			<h2><span> The Everlasting Plastic Horses </span></h2>
 			<h3><span>Epilogue</span></h3>
@@ -783,10 +782,10 @@
 
 		</article>
 
-		<div style="height: 7em; background-image: linear-gradient(#c782ff, aliceblue)">
+		<div id="thanks" style="height: 7em; background-image: linear-gradient(#c782ff, aliceblue)">
 		</div>
 
-		<article id="thanks" style="position:relative; background-color: aliceblue;">
+		<article style="position:relative; background-color: aliceblue;">
 			<h2><span> Special Thanks </span></h2>
 			<h3><span>Not without you</span></h3>
 			<p>
@@ -796,40 +795,44 @@
 
 		</article>
 
-		<div style="height: 7em; background-image: linear-gradient(aliceblue, darkblue)">
+		<div id="biblio" style="height: 7em; background-image: linear-gradient(aliceblue, darkblue)">
 		</div>
 
-		<article id="Biblio" style="position:relative; background-color: darkblue;">
-			<h2><span>Bibliography</span></h2>
+		<article style="position:relative; background-color: darkblue;">
+			<h2 style="color: rgb(154, 206, 251); border-bottom: 3px solid  rgb(154, 206, 251);">
+				<span>Bibliography</span>
+			</h2>
 			<p>
 
-				<li style="color: aliceblue !important;font-family: 'apple';list-style-type:value;">Magic: A history -
-					Chris Gosden (2020)
+			<ul>
+				<li class="bib-list">Gosden, C. (2020). Magic: A History.
 				</li>
-				<li style="color: aliceblue !important;font-family: 'apple';list-style-type:value;">Magic: A history -
-					Chris Gosden (2020)
+				<li class="bib-list">Campbell, J., & Moyers, B. (1988). The
+					Power of Myth.</li>
+				<li class="bib-list">Pater, R. (2016). The Politics of
+					Design.
 				</li>
-				<li style="color: aliceblue !important;font-family: 'apple';list-style-type:value;">Magic: A history -
-					Chris Gosden (2020)
+				<li class="bib-list">Hooks, B. (2001). All about Love.</li>
+				<li class="bib-list">Heimann, J., & Heller, S. (2021). Toys:
+					100 Years of All American Toy Ads.</li>
+				<li class="bib-list">Tolkien, J. R. R. (1964). Tree and
+					Leaf.
 				</li>
-				<li style="color: aliceblue !important;font-family: 'apple';list-style-type:value;">Magic: A history -
-					Chris Gosden (2020)
+				<li class="bib-list">Huizinga, J. (1939). Homo Ludens.</li>
+				<li class="bib-list">Lévi-Strauss, C. (1978). Myth and
+					Meaning.
 				</li>
-				<li style="color: aliceblue !important;font-family: 'apple';list-style-type:value;">Magic: A history -
-					Chris Gosden (2020)
-				</li>
-				<li style="color: aliceblue !important;font-family: 'apple';list-style-type:value;">Magic: A history -
-					Chris Gosden (2020)
-				</li>
-				<li style="color: aliceblue !important;font-family: 'apple';list-style-type:value;">Magic: A history -
-					Chris Gosden (2020)
-				</li>
-				<li style="color: aliceblue !important;font-family: 'apple';list-style-type:value;">Magic: A history -
-					Chris Gosden (2020)
-				</li>
-				<li style="color: aliceblue !important;font-family: 'apple';list-style-type:value;">Magic: A history -
-					Chris Gosden (2020)
-				</li>
+				<li class=" bib-list">Hall, S. (1997). The Work of
+					Representation.</li>
+				<li class="bib-list">Hoover, S., Simkins, D., Deterding,
+					S.,
+					Meldman, D., & Brown, A. (2018). Manuscript: “Performance Studies and Role Playing Games”.</li>
+				<li class="bib-list">Renfrew, C., Morley, I., Boyd, M.,
+					Burghardt, G., Bateson, P., Smith, P. K., Dissanayake, E., Freidel, D., Rich, M., Halley, C.,
+					Watkins, T., Garfinkel, Y., Sterckx, R., Malone, C. A. T., Morgan, L., Marinatos, N., Spivey, N.,
+					Taube, K., Kyriakidis, E., & Malafouris, L. (2017). Ritual, Play and Belief, in Evolution and Early
+					Human Societies.</li>
+			</ul>
 
 			</p>
 
@@ -837,7 +840,7 @@
 
 	</main>
 
-	<div style="height: 7em; background-image: linear-gradient(darkblue, aliceblue)">
+	<div style="height: 7em; background-image: linear-gradient(darkblue, rgb(206, 206, 206))">
 	</div>
 
 	<footer>
