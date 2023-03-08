@@ -3,6 +3,19 @@
 
 
 /* @FONT FACE (enable the use of 'custom fonts' inside your document) */
+@font-face {
+  font-family: 'VonderClean';
+  src: url('/assets/fonts/Vonder/VonderClean.woff') format('woff'),
+    url('/assets/fonts/Vonder/VonderClean.woff2') format('woff2'),
+    url('/assets/fonts/Vonder/VonderClean.svg#VonderClean') format('svg'),
+    url('/assets/fonts/Vonder/VonderClean.eot'),
+    url('/assets/fonts/Vonder/VonderClean.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Vonder/VonderClean.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Adventuro';
@@ -21,18 +34,6 @@
     url('../fonts/yourfontname/yourfontname-italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: 'Germanica';
-  src: url('../fonts/Vonder/VonderClean.ttf'),
-    url('../fonts/Vonder/VonderClean.woff'),
-    url('../fonts/Vonder/VonderClean.eot'),
-    url('../fonts/Vonder/VonderClean.woff2') format('embedded-opentype'),
-    url('../fonts/Vonder/VonderClean.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
   font-display: block;
 }
 
@@ -367,7 +368,7 @@ a:focus-visible {
 
 h1 {
   /* h1 style */
-  font-family: 'Germanica';
+  font-family: 'VonderClean';
   font-size: 12vw;
   text-align: center;
   color: rgba(255, 255, 255);
@@ -379,7 +380,7 @@ h1 {
 
 h2 {
   /* h2 style */
-  font-family: 'Germanica';
+  font-family: 'VonderClean';
   color: rgba(255, 255, 255);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 4em;
@@ -400,7 +401,7 @@ h2 span {
 }
 
 h3 {
-  font-family: 'Germanica';
+  font-family: 'VonderClean';
   font-size: 2em;
   text-align: center;
   width: fit-content;
