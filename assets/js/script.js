@@ -72,16 +72,7 @@ links.forEach(link => {
     });
 });
 
-function show() {
 
-    /* Access image by id and change
-    the display property to block*/
-    document.getElementById('toypopup')
-        .style.display = "block";
-
-    document.getElementById('image')
-        .style.display = "none";
-}
 
 new Vue({
     el: '#app',

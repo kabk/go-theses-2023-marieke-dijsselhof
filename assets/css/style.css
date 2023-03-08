@@ -159,6 +159,7 @@ html {
   font: var(--font-size) var(--font-family);
   color: var(--color-text);
   background-color: var(--color-background);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -216,7 +217,6 @@ i {
   position: relative;
   display: block;
 }
-
 
 .mask1 {
   -webkit-mask-image: url(/assets/images/window2.png);
@@ -583,7 +583,8 @@ li {
 
 .reflinks,
 input[type="submit"],
-input[type="reset"] a {
+input[type="reset"] a,
+li.reflinks a {
   list-style-type: decimal;
   list-style-position: outside;
   color: rgb(241, 34, 41);
@@ -868,9 +869,9 @@ summary {}
     margin-block-end: 0;
     font-family: 'apple';
     font-size: 0.9em;
-    margin-left: 10vw;
+    margin-left: 2vw;
     padding-top: 2em;
-    margin-right: 10vw;
+    margin-right: 2vw;
     column-count: 1;
 
   }
@@ -887,9 +888,9 @@ summary {}
     margin-block-end: 0;
     font-family: 'apple';
     font-size: 0.9em;
-    margin-left: 10vw;
+    margin-left: 3vw;
     padding-top: 2em;
-    margin-right: 10vw;
+    margin-right: 3vw;
     column-count: 1;
 
   }
@@ -906,9 +907,9 @@ summary {}
     margin-block-end: 0;
     font-family: 'apple';
     font-size: 0.9em;
-    margin-left: 10vw;
+    margin-left: 3vw;
     padding-top: 2em;
-    margin-right: 10vw;
+    margin-right: 3vw;
     column-count: 1;
 
   }
