@@ -32,8 +32,10 @@ $(document).ready(function () {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("menu").style.top = "-6.0vh";
+            document.getElementById("menu-content").style.top = "5.2vh";
         } else {
             document.getElementById("menu").style.top = "5.2vh";
+            document.getElementById("menu-content").style.top = "-6.0vh";
         }
         prevScrollpos = currentScrollPos;
     }
@@ -54,6 +56,21 @@ window.addEventListener('scroll', () => {
     lastScrollTop = st <= 0 ? 0 : st;
 });
 
+
+const links = document.querySelectorAll('article p a');
+
+// loop through each link and add a click event listener
+links.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // prevent the default link behavior
+        const href = link.getAttribute('href'); // get the value of the href attribute
+        const targetId = href.substring(1); // remove the "#" character from the href value
+        const target = document.getElementById(targetId); // find the corresponding <div> element
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' }); // scroll to the <div> element smoothly
+        }
+    });
+});
 
 function show() {
 

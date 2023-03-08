@@ -26,7 +26,20 @@
 
 @font-face {
   font-family: 'Germanica';
-  src: url('../fonts/yourfontname/Germanica.ttf'),
+  src: url('../fonts/yourfontname/VonderClean.ttf'),
+    url('../fonts/yourfontname/yourfontname-italic.woff'),
+    url('../fonts/yourfontname/yourfontname-italic.eot'),
+    url('../fonts/yourfontname/yourfontname-italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/yourfontname/yourfontname-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: block;
+}
+
+
+@font-face {
+  font-family: 'Compac';
+  src: url('../fonts/yourfontname/Compaq1982.otf'),
     url('../fonts/yourfontname/yourfontname-italic.woff'),
     url('../fonts/yourfontname/yourfontname-italic.eot'),
     url('../fonts/yourfontname/yourfontname-italic.eot?#iefix') format('embedded-opentype'),
@@ -99,22 +112,21 @@ img {
   margin-top: 0rem;
   transform: translateX(-15vw);
   object-fit: contain;
-  background-color: #F00;
+  background-color: transparent;
 }
 
 .scroll-left {
   position: fixed;
   height: 5.5vh;
-  top: -1px;
+  top: 0px;
   width: 100vw;
   /* 121%; */
   left: -1px;
   position: fixed;
   z-index: 40;
-  animation-name: purplegreenblock;
-  -webkit-animation-name: purplegreenblock;
+  background-color: #ff68b3;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 6s;
   /* #90eebf; */
 }
 
@@ -122,7 +134,7 @@ img {
   position: absolute;
   align-items: center;
   display: table-cell;
-  top: -2em;
+  top: -1.95em;
   vertical-align: middle;
   color: black;
   font-family: 'apple';
@@ -157,6 +169,7 @@ body {
   width: 100%;
   height: auto;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 header {
@@ -206,8 +219,8 @@ i {
 
 
 .mask1 {
-  -webkit-mask-image: url(/assets/images/window.png);
-  mask-image: url(/assets/images/window.png);
+  -webkit-mask-image: url(/assets/images/window2.png);
+  mask-image: url(/assets/images/window2.png);
   margin-left: 3em;
   margin-top: 2em;
   margin-right: 3em;
@@ -226,15 +239,15 @@ i {
 
 @-webkit-keyframes purplegreen {
   0% {
-    color: greenyellow;
+    color: rgb(200, 226, 255);
   }
 
   50% {
-    color: greenyellow;
+    color: rgb(200, 226, 255);
   }
 
   51% {
-    color: #c782ff;
+    color: #f1ffd6;
   }
 
   100% {
@@ -244,7 +257,7 @@ i {
 
 @-webkit-keyframes purplegreen {
   0% {
-    color: greenyellow;
+    color: rgb(200, 226, 255)
   }
 
   50% {
@@ -252,17 +265,17 @@ i {
   }
 
   100% {
-    color: greenyellow;
+    color: rgb(200, 226, 255);
   }
 }
 
 @-webkit-keyframes purplegreenblock {
   0% {
-    background-color: c782ff;
+    background-color: #c782ff;
   }
 
   50% {
-    background-color: c782ff;
+    background-color: #c782ff;
   }
 
   51% {
@@ -293,6 +306,28 @@ i {
   -webkit-animation-name: purplegreen;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 1s;
+}
+
+.bywho {
+  margin-top: -0.6em;
+  color: aliceblue;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.bywho a :hover {
+  margin-top: -0.6em;
+  color: aliceblue;
+  text-decoration: none;
+  background-color: transparent;
+  !important
+}
+
+.introimg {
+  position: absolute;
+  background-image: url("/assets/images/r:MastersoftheUniverse.png");
+  background-repeat: repeat-x;
+  height: 300px;
 }
 
 main {}
@@ -330,13 +365,13 @@ a:focus-visible {
 
 h1 {
   /* h1 style */
-  font-family: 'germanica';
-  font-size: 13vw;
+  font-family: 'Germanica';
+  font-size: 12vw;
   text-align: center;
   color: rgba(255, 255, 255);
-  margin-top: 1em;
-  text-shadow: -5px 0 black, 0 1px black, 1px 0 black, 0 2px black;
+  text-shadow: -8px 0 black, 0 2px black, 2px 0 black, 0 2px black;
   line-height: 0.8;
+  margin-bottom: 0;
 }
 
 
@@ -380,6 +415,7 @@ h4 {
   font-family: 'adventuro';
   text-align: center;
   font-size: 2em;
+  margin-top: 0;
   color: rgba(255, 255, 255);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -436,9 +472,9 @@ h5 {
     margin-block-end: 0;
     font-family: 'apple';
     font-size: 0.9em;
-    margin-left: 20vw;
+    margin-left: 15vw;
     padding-top: 2em;
-    margin-right: 20vw;
+    margin-right: 15vw;
     column-count: 1;
 
   }
@@ -454,9 +490,9 @@ h5 {
     margin-block-end: 0;
     font-size: 1em;
     font-family: 'apple';
-    margin-left: 3rem;
+    margin-left: 2.5rem;
     padding-top: 2em;
-    margin-right: 3rem;
+    margin-right: 2.5rem;
     column-count: 1;
   }
 }
@@ -519,13 +555,60 @@ li {
 }
 
 .bib-list {
-  list-style-type: decimal;
+  list-style-type: lower-roman;
   list-style-position: outside;
-  color: rgb(154, 206, 251) !important;
+  color: rgb(30, 111, 35);
   font-family: 'apple';
   font-size: 80%;
   padding-bottom: 0.4em;
 }
+
+.bib-list2 {
+  list-style-type: lower-alpha;
+  list-style-position: outside;
+  color: rgb(241, 34, 41);
+  font-family: 'apple';
+  font-size: 80%;
+  padding-bottom: 0.4em;
+}
+
+.bib-list3 {
+  list-style-type: decimal;
+  list-style-position: outside;
+  color: rgb(241, 34, 41);
+  font-family: 'apple';
+  font-size: 80%;
+  padding-bottom: 0.4em;
+}
+
+.reflinks,
+input[type="submit"],
+input[type="reset"] a {
+  list-style-type: decimal;
+  list-style-position: outside;
+  color: rgb(241, 34, 41);
+  font-family: 'apple';
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 80%;
+  padding-bottom: 0.4em;
+  cursor: pointer;
+}
+
+.reflinks,
+input[type="submit"],
+input[type="reset"] :hover {
+  list-style-type: decimal;
+  text-decoration: underline;
+  list-style-position: outside;
+  color: rgb(241, 34, 41);
+  !important font-family: 'apple';
+  background-color: transparent;
+  font-size: 80%;
+  padding-bottom: 0.4em;
+  cursor: pointer;
+}
+
 
 
 /* navigation */
@@ -573,10 +656,16 @@ li {
 #menu-list li:hover {}
 
 #menu-content {
-  top: 200px;
+  top: 110%;
   display: none;
   overflow: hidden;
   position: sticky;
+}
+
+.credits {
+  position: sticky;
+  top: 2vw;
+  font-family: sans-serif;
 }
 
 /* content */
