@@ -116,6 +116,11 @@ img {
   background-color: transparent;
 }
 
+.mobileimage {
+  display: none;
+
+}
+
 .scroll-left {
   position: fixed;
   height: 5.5vh;
@@ -125,7 +130,7 @@ img {
   left: -1px;
   position: fixed;
   z-index: 40;
-  background-color: #ff68b3;
+  background-color: rgb(246, 61, 126);
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 6s;
   /* #90eebf; */
@@ -165,7 +170,7 @@ html {
 
 body {
   position: relative;
-  background-color: var(--color-background);
+  background-image: -moz-linear-gradient(grey, greenyellow);
   font: var(--font-size) var(--font-family);
   color: var(--color-text);
   width: 100%;
@@ -225,7 +230,7 @@ i {
   -webkit-mask-image: url(/assets/images/window2.png);
   mask-image: url(/assets/images/window2.png);
   margin-left: 3em;
-  margin-top: 2em;
+  margin-top: 10vh;
   margin-right: 3em;
   margin-bottom: -3.5em;
   position: relative;
@@ -238,6 +243,34 @@ i {
   mask-repeat: no-repeat;
 }
 
+span::before {
+  content: "Horses";
+  animation: animate infinite 3s;
+  padding-left: 10px;
+}
+
+@keyframes animate {
+
+  0% {
+    content: "Horses";
+  }
+
+  25% {
+    content: "Heroes";
+  }
+
+  50% {
+    content: "Racecars";
+  }
+
+  75% {
+    content: "Barbies";
+  }
+
+  100% {
+    content: "Horses";
+  }
+}
 
 
 @-webkit-keyframes purplegreen {
@@ -393,7 +426,6 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 h2 span {
@@ -476,16 +508,53 @@ h5 {
     font-family: 'apple';
     font-size: 0.9em;
     margin-left: 15vw;
+    padding-bottom: 12vw;
     padding-top: 2em;
     margin-right: 15vw;
     column-count: 1;
+    line-height: 1.5em;
 
+  }
+
+  p a :hover {
+    pointer-events: none;
+    background-color: transparent;
+    color: inherit;
+  }
+
+  p a img {
+    display: none;
   }
 }
 
 
 /* SMALL WEBSITE */
 @media all and (max-width: 1000px) {
+
+  .showme {
+    display: none;
+  }
+
+  .showher {
+    background-color: transparent !important;
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+
+  .showher :hover {
+    color: black;
+    background-color: none;
+    font-style: normal !important;
+  }
+
+  .showher:hover .showme {
+    display: none;
+    font-style: normal !important;
+  }
+
+  .mobileimage {
+    display: contents;
+  }
 
   p {
     /* paragraph style */
@@ -494,9 +563,21 @@ h5 {
     font-size: 1em;
     font-family: 'apple';
     margin-left: 2.5rem;
+    padding-bottom: 12vw;
     padding-top: 2em;
     margin-right: 2.5rem;
     column-count: 1;
+    line-height: 1.5em
+  }
+
+  p a :hover {
+    pointer-events: none;
+    background-color: transparent;
+    color: inherit;
+  }
+
+  p a img {
+    display: none;
   }
 }
 
@@ -619,7 +700,7 @@ input[type="reset"] :hover {
 
 .sandwich {
   position: fixed;
-  top: 5.4vh;
+  top: 5.9vh;
   background-color: aliceblue;
   width: 100vw;
 }
@@ -881,6 +962,16 @@ summary {}
     display: block;
   }
 
+  p a :hover {
+    pointer-events: none;
+    background-color: transparent;
+    color: inherit;
+  }
+
+  p a img {
+    display: none;
+  }
+
 }
 
 
@@ -896,9 +987,20 @@ summary {}
     font-size: 0.9em;
     margin-left: 2vw;
     padding-top: 2em;
+    padding-bottom: 5vw;
     margin-right: 2vw;
     column-count: 1;
 
+  }
+
+  p a :hover {
+    pointer-events: none;
+    background-color: transparent;
+    color: inherit;
+  }
+
+  p a img {
+    display: none;
   }
 }
 
@@ -915,10 +1017,22 @@ summary {}
     font-size: 0.9em;
     margin-left: 3vw;
     padding-top: 2em;
+    padding-bottom: 5vw;
     margin-right: 3vw;
     column-count: 1;
-
+    line-height: 1.5em
   }
+
+  p a :hover {
+    pointer-events: none;
+    background-color: transparent;
+    color: inherit;
+  }
+
+  p a img {
+    display: none;
+  }
+}
 }
 
 
@@ -934,8 +1048,20 @@ summary {}
     font-size: 0.9em;
     margin-left: 3vw;
     padding-top: 2em;
+    margin-bottom: 3vw;
     margin-right: 3vw;
     column-count: 1;
-
+    line-height: 1.5em
   }
+
+  p a :hover {
+    pointer-events: none;
+    background-color: transparent;
+    color: inherit;
+  }
+
+  p a img {
+    display: none;
+  }
+}
 }
