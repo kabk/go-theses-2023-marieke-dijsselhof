@@ -421,9 +421,10 @@ h1 {
   text-align: center;
   color: rgba(255, 255, 255);
   text-shadow: 0.8vw 0 black, 0 2px black, 2px 0 black, 0 2px black;
-  line-height: 1.2;
+  line-height: 1.1;
   margin-top: 10hv;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 h1 br.responsive {
@@ -454,11 +455,9 @@ h2 span {
 }
 
 h3 {
-  font-family: 'Vonder Clean';
+  font-family: 'Vollkorn SC';
   font-size: 2em;
   text-align: center;
-  width: fit-content;
-  border-bottom: 3px solid #000;
   margin: 0 0 0.2em;
   padding-bottom: 0.35em;
   display: block;
