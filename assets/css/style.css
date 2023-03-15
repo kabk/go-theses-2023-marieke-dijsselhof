@@ -586,6 +586,23 @@ h5 {
   }
 }
 
+.mask1 {
+  -webkit-mask-image: none;
+  mask-image: none;
+  margin-left: 0em;
+  margin-top: 0vh;
+  margin-right: 0em;
+  margin-bottom: -3.5em;
+  position: relative;
+  height: fit-content;
+  mask-origin: margin-box;
+  mask-position: center;
+  -webkit-mask-size: 100%;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
 
 ol,
 ul {
