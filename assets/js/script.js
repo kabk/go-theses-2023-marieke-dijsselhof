@@ -31,11 +31,11 @@ $(document).ready(function () {
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-            document.getElementById("menu").style.top = "-6.0vh";
+            document.getElementById("menu").style.top = "-5.0vh";
             document.getElementById("menu-content").style.top = "5.5vh";
         } else {
             document.getElementById("menu").style.top = "5.5vh";
-            document.getElementById("menu-content").style.top = "-6.0vh";
+            document.getElementById("menu-content").style.top = "-5.0vh";
         }
         prevScrollpos = currentScrollPos;
     }

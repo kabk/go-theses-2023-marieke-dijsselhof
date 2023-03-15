@@ -142,7 +142,7 @@ img {
   /* 121%; */
   left: -1px;
   position: fixed;
-  z-index: 40;
+  z-index: 250;
   background-color: rgb(246, 61, 126);
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 6s;
@@ -426,7 +426,7 @@ h1 {
 
 h2 {
   /* h2 style */
-  font-family: 'Vonder Clean';
+  font-family: 'Creepster';
   color: rgba(255, 255, 255);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 4em;
@@ -858,7 +858,7 @@ a.return:hover {
   left: 0;
   background-color: aliceblue;
   width: fit-content;
-  z-index: 1;
+  z-index: 200;
   /* add this to make sure the sandwich menu appears on top of the other elements */
 }
 
