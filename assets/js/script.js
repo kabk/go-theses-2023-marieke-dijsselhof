@@ -22,7 +22,7 @@ $(document).ready(function () {
             }
             var target = $(this.hash);
             $('html, body').animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().bottom
             }, 1000);
         });
     }
@@ -31,11 +31,11 @@ $(document).ready(function () {
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-            document.getElementById("menu").style.top = "-5.0vh";
-            document.getElementById("menu-content").style.top = "5.3vh";
+            document.getElementById("menu").style.bottom = "-5.0vh";
+            document.getElementById("menu-content").style.bottom = "0vh";
         } else {
-            document.getElementById("menu").style.top = "5.3vh";
-            document.getElementById("menu-content").style.top = "-5.0vh";
+            document.getElementById("menu").style.bottom = "0vh";
+            document.getElementById("menu-content").style.bottom = "-5.0vh";
         }
         prevScrollpos = currentScrollPos;
     }
@@ -49,9 +49,9 @@ menuBtn.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
     const st = window.pageYOffset || document.documentElement.scrollTop;
     if (st > lastScrollTop) {
-        menuContent.style.top = '-200px';
+        menuContent.style.bottom = '-200px';
     } else {
-        menuContent.style.top = '0';
+        menuContent.style.bottom = '0';
     }
     lastScrollTop = st <= 0 ? 0 : st;
 });

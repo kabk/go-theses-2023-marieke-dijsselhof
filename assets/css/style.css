@@ -242,6 +242,8 @@ i {
 }
 
 .mask1 {
+  background: url(assets/images/sky.gif);
+  background-size: 120vh;
   margin-left: 0em;
   margin-top: 2vh;
   margin-right: 0em;
@@ -415,7 +417,7 @@ a:focus-visible {
 h1 {
   /* h1 style */
   font-family: 'Sancreek';
-  font-size: 7vh;
+  font-size: 15vh;
   text-align: center;
   color: rgba(255, 255, 255);
   text-shadow: 0.8vw 0 black, 0 2px black, 2px 0 black, 0 2px black;
@@ -423,6 +425,11 @@ h1 {
   margin-top: 10hv;
   margin-bottom: 0;
 }
+
+h1 br.responsive {
+  display: none; // Show BR tag for narrow screens
+}
+
 
 
 h2 {
@@ -570,32 +577,43 @@ h5 {
     display: contents;
   }
 
-  p {
-    /* paragraph style */
-    margin-block-start: 0;
-    margin-block-end: 0;
-    font-size: 1em;
-    font-family: 'apple';
-    margin-left: 2.5rem;
-    padding-bottom: 12vw;
-    padding-top: 2em;
-    margin-right: 2.5rem;
-    column-count: 1;
-    line-height: 1.5em
+  h1 {
+    font-size: 8vh;
   }
 
-  p a :hover {
-    pointer-events: none;
-    background-color: transparent;
-    color: inherit;
-  }
-
-  p a img {
-    display: none;
+  h1 br.responsive {
+    display: inline; // Hide BR tag for wider screens
   }
 }
 
+p {
+  /* paragraph style */
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 1em;
+  font-family: 'apple';
+  margin-left: 2.5rem;
+  padding-bottom: 12vw;
+  padding-top: 2em;
+  margin-right: 2.5rem;
+  column-count: 1;
+  line-height: 1.5em
+}
+
+p a :hover {
+  pointer-events: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+p a img {
+  display: none;
+}
+}
+
 .mask1 {
+  background: url(assets/images/sky.gif);
+  background-size: 120vw;
   -webkit-mask-image: none;
   mask-image: none;
   margin-left: 0em;
@@ -603,7 +621,7 @@ h5 {
   margin-right: 0em;
   margin-bottom: -3.5em;
   position: relative;
-  height: 100vh;
+  height: 100vw;
   mask-origin: margin-box;
   mask-position: center;
   -webkit-mask-size: 100%;
@@ -859,7 +877,7 @@ a.return:hover {
 
 .sandwich {
   position: fixed;
-  top: 5.0vh;
+  bottom: 0vh;
   left: 0;
   background-color: aliceblue;
   width: fit-content;
@@ -872,7 +890,7 @@ a.return:hover {
   width: fit-content;
   height: fit-content;
   position: fixed;
-  top: 5.3vh;
+  bottom: 0vh;
   /* adjust this value based on the height of your sandwich menu */
   text-align: center;
   transition: top 0.3s;
@@ -893,7 +911,7 @@ a.return:hover {
 
 .sandwich {
   position: fixed;
-  top: 5.0vh;
+  bottom: 0vh;
   background-color: aliceblue;
   width: 100vw;
 }
@@ -923,6 +941,36 @@ a.return:hover {
 
 #menu-list li:hover {}
 
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
 
 .credits {
   position: sticky;
