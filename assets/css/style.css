@@ -415,11 +415,11 @@ a:focus-visible {
 h1 {
   /* h1 style */
   font-family: 'Sancreek';
-  font-size: 9vh;
+  font-size: 7vh;
   text-align: center;
   color: rgba(255, 255, 255);
   text-shadow: 0.8vw 0 black, 0 2px black, 2px 0 black, 0 2px black;
-  line-height: 1;
+  line-height: 1.2;
   margin-top: 10hv;
   margin-bottom: 0;
 }
