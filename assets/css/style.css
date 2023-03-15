@@ -232,14 +232,12 @@ i {
 }
 
 .mask1 {
-  -webkit-mask-image: url(assets/images/window2.png);
-  mask-image: url(assets/images/window2.png);
-  margin-left: 3em;
+  margin-left: 0em;
   margin-top: 10vh;
-  margin-right: 3em;
+  margin-right: 0em;
   margin-bottom: -3.5em;
   position: relative;
-  height: fit-content;
+  height: 100vh;
   mask-origin: margin-box;
   mask-position: center;
   -webkit-mask-size: 100%;
@@ -407,7 +405,7 @@ a:focus-visible {
 h1 {
   /* h1 style */
   font-family: 'Vonder Clean';
-  font-size: 12vw;
+  font-size: 13vh;
   text-align: center;
   color: rgba(255, 255, 255);
   text-shadow: 0.8vw 0 black, 0 2px black, 2px 0 black, 0 2px black;
@@ -594,7 +592,7 @@ h5 {
   margin-right: 0em;
   margin-bottom: -3.5em;
   position: relative;
-  height: fit-content;
+  height: 100vh;
   mask-origin: margin-box;
   mask-position: center;
   -webkit-mask-size: 100%;
