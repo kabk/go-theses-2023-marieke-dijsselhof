@@ -17,6 +17,16 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Blaka';
+  src:
+    url('assets/fonts/Blaka/Blaka-Regular.tff') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 
@@ -233,7 +243,7 @@ i {
 
 .mask1 {
   margin-left: 0em;
-  margin-top: 10vh;
+  margin-top: 2vh;
   margin-right: 0em;
   margin-bottom: -3.5em;
   position: relative;
@@ -404,13 +414,13 @@ a:focus-visible {
 
 h1 {
   /* h1 style */
-  font-family: 'Vonder Clean';
-  font-size: 13vh;
+  font-family: 'Creepster';
+  font-size: 9vh;
   text-align: center;
   color: rgba(255, 255, 255);
   text-shadow: 0.8vw 0 black, 0 2px black, 2px 0 black, 0 2px black;
-  line-height: 0.8;
-  margin-bottom: 0;
+  line-height: 1;
+  margin-bottom: 10vh;
 }
 
 
