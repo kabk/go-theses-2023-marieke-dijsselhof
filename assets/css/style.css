@@ -5,12 +5,12 @@
 /* @FONT FACE (enable the use of 'custom fonts' inside your document) */
 @font-face {
   font-family: 'VonderClean';
-  src: url('/assets/fonts/Vonder/VonderClean.woff') format('woff'),
-    url('/assets/fonts/Vonder/VonderClean.woff2') format('woff2'),
-    url('/assets/fonts/Vonder/VonderClean.svg#VonderClean') format('svg'),
-    url('/assets/fonts/Vonder/VonderClean.eot'),
-    url('/assets/fonts/Vonder/VonderClean.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/Vonder/VonderClean.ttf') format('truetype');
+  src: url('assets/fonts/Vonder/VonderClean.woff') format('woff'),
+    url('assets/fonts/Vonder/VonderClean.woff2') format('woff2'),
+    url('assets/fonts/Vonder/VonderClean.svg#VonderClean') format('svg'),
+    url('assets/fonts/Vonder/VonderClean.eot'),
+    url('assets/fonts/Vonder/VonderClean.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/Vonder/VonderClean.ttf') format('truetype');
 
   font-weight: normal;
   font-style: normal;
@@ -229,8 +229,8 @@ i {
 }
 
 .mask1 {
-  -webkit-mask-image: url(/assets/images/window2.png);
-  mask-image: url(/assets/images/window2.png);
+  -webkit-mask-image: url(assets/images/window2.png);
+  mask-image: url(assets/images/window2.png);
   margin-left: 3em;
   margin-top: 10vh;
   margin-right: 3em;
@@ -363,7 +363,7 @@ span::before {
 
 .introimg {
   position: absolute;
-  background-image: url("/assets/images/r:MastersoftheUniverse.png");
+  background-image: url("assets/images/r:MastersoftheUniverse.png");
   background-repeat: repeat-x;
   height: 300px;
 }
@@ -613,11 +613,12 @@ input[type="reset"] {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  z-index: 600;
 }
 
 button:hover,
-input[type="submit"],
-input[type="reset"] {
+input[type="submit"]:hover,
+input[type="reset"]:hover {
   background: none;
   color: #c782ff;
   border: none;
@@ -625,6 +626,7 @@ input[type="reset"] {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  z-index: 600;
 }
 
 /* PAGE STYLES */
@@ -827,6 +829,8 @@ a.return:hover {
   top: 5.9vh;
   background-color: aliceblue;
   width: 100vw;
+  z-index: 1;
+  /* add this to make sure the sandwich menu appears on top of the other elements */
 }
 
 #menu {
@@ -834,11 +838,31 @@ a.return:hover {
   width: 100vw;
   height: fit-content;
   position: fixed;
-  top: 0;
+  top: calc(5.9vh + 60px);
+  /* adjust this value based on the height of your sandwich menu */
   text-align: center;
   transition: top 0.3s;
   text-decoration: none;
+  z-index: 1;
+  /* add this to make sure the menu appears on top of the other elements */
 }
+
+#menu-content {
+  top: 110%;
+  display: none;
+  overflow: hidden;
+  position: sticky;
+  z-index: 1;
+  /* add this to make sure the menu content appears on top of the other elements */
+}
+
+.sandwich {
+  position: fixed;
+  top: 5.9vh;
+  background-color: aliceblue;
+  width: 100vw;
+}
+
 
 #menu u {
   padding-top: 0px;
@@ -864,12 +888,6 @@ a.return:hover {
 
 #menu-list li:hover {}
 
-#menu-content {
-  top: 110%;
-  display: none;
-  overflow: hidden;
-  position: sticky;
-}
 
 .credits {
   position: sticky;
