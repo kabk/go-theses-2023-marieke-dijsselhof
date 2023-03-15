@@ -4,7 +4,7 @@
 
 /* @FONT FACE (enable the use of 'custom fonts' inside your document) */
 @font-face {
-  font-family: 'VonderClean';
+  font-family: 'Vonder Clean';
   src: url('assets/fonts/Vonder/VonderClean.woff') format('woff'),
     url('assets/fonts/Vonder/VonderClean.woff2') format('woff2'),
     url('assets/fonts/Vonder/VonderClean.svg#VonderClean') format('svg'),
@@ -16,6 +16,9 @@
   font-style: normal;
   font-display: swap;
 }
+
+
+
 
 @font-face {
   font-family: 'Adventuro';
@@ -403,7 +406,7 @@ a:focus-visible {
 
 h1 {
   /* h1 style */
-  font-family: 'VonderClean';
+  font-family: 'Vonder Clean';
   font-size: 12vw;
   text-align: center;
   color: rgba(255, 255, 255);
@@ -415,7 +418,7 @@ h1 {
 
 h2 {
   /* h2 style */
-  font-family: 'VonderClean';
+  font-family: 'Vonder Clean';
   color: rgba(255, 255, 255);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 4em;
@@ -435,7 +438,7 @@ h2 span {
 }
 
 h3 {
-  font-family: 'VonderClean';
+  font-family: 'Vonder Clean';
   font-size: 2em;
   text-align: center;
   width: fit-content;
