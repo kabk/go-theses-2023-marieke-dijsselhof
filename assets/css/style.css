@@ -248,8 +248,7 @@ i {
   margin-right: 0em;
   margin-bottom: -3.5em;
   position: relative;
-  height: auto;
-  width: 120vw;
+  height: 100vh;
   mask-origin: margin-box;
   mask-position: center;
   -webkit-mask-size: 100%;
@@ -619,7 +618,6 @@ p a img {
   margin-bottom: -3.5em;
   position: relative;
   height: 100vh;
-  width: auto;
   mask-origin: margin-box;
   mask-position: center;
   -webkit-mask-size: 100%;
