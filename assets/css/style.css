@@ -854,16 +854,17 @@ a.return:hover {
 
 .sandwich {
   position: fixed;
-  top: 5.9vh;
+  top: 5.0vh;
+  left: 0;
   background-color: aliceblue;
-  width: 100vw;
+  width: fit-content;
   z-index: 1;
   /* add this to make sure the sandwich menu appears on top of the other elements */
 }
 
 #menu {
   background-color: aliceblue;
-  width: 100vw;
+  width: fit-content;
   height: fit-content;
   position: fixed;
   top: calc(5.9vh + 60px);
@@ -876,17 +877,18 @@ a.return:hover {
 }
 
 #menu-content {
-  top: 110%;
+  top: 106%;
   display: none;
   overflow: hidden;
   position: sticky;
   z-index: 1;
+  text-align: right;
   /* add this to make sure the menu content appears on top of the other elements */
 }
 
 .sandwich {
   position: fixed;
-  top: 5.9vh;
+  top: 5.0vh;
   background-color: aliceblue;
   width: 100vw;
 }
