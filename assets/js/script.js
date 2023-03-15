@@ -12,6 +12,7 @@ $(document).ready(function () {
             content.style.display = "block";
         }
     });
+
     var menuLinks = document.querySelectorAll("#menu-list li a");
 
     for (var i = 0; i < menuLinks.length; i++) {
@@ -20,10 +21,12 @@ $(document).ready(function () {
             if (content.style.display === "block") {
                 content.style.display = "none";
             }
-            var target = $(this.hash);
-            $('html, body').animate({
-                scrollTop: target.offset().bottom
-            }, 1000);
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                $('html, body').animate({
+                    scrollTop: target.offsetTop
+                }, 1000);
+            }
         });
     }
 
