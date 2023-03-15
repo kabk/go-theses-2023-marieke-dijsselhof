@@ -426,7 +426,7 @@ h1 {
 
 h2 {
   /* h2 style */
-  font-family: 'Creepster';
+  font-family: 'Pirata One';
   color: rgba(255, 255, 255);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 4em;
@@ -815,6 +815,10 @@ footer :target {
   background-color: transparent;
 }
 
+div.page-wrapper {
+  padding: 0;
+}
+
 .return {
   background-color: transparent;
   color: #ff0c0c;
@@ -867,7 +871,7 @@ a.return:hover {
   width: fit-content;
   height: fit-content;
   position: fixed;
-  top: calc(5.9vh + 60px);
+  top: 5.3vh;
   /* adjust this value based on the height of your sandwich menu */
   text-align: center;
   transition: top 0.3s;

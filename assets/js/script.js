@@ -32,9 +32,9 @@ $(document).ready(function () {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("menu").style.top = "-5.0vh";
-            document.getElementById("menu-content").style.top = "5.5vh";
+            document.getElementById("menu-content").style.top = "5.3vh";
         } else {
-            document.getElementById("menu").style.top = "5.5vh";
+            document.getElementById("menu").style.top = "5.3vh";
             document.getElementById("menu-content").style.top = "-5.0vh";
         }
         prevScrollpos = currentScrollPos;
