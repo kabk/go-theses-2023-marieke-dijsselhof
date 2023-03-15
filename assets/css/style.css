@@ -371,7 +371,6 @@ span::before {
   color: aliceblue;
   text-decoration: none;
   background-color: transparent;
-  !important
 }
 
 .introimg {
@@ -381,7 +380,6 @@ span::before {
   height: 300px;
 }
 
-main {}
 
 a {
   display: inline-block;
@@ -428,7 +426,7 @@ h1 {
 }
 
 h1 br.responsive {
-  display: none; // Show BR tag for narrow screens
+  display: none;
 }
 
 
@@ -581,7 +579,7 @@ h5 {
   }
 
   h1 br.responsive {
-    display: inline; // Hide BR tag for wider screens
+    display: inline;
   }
 }
 
@@ -608,7 +606,7 @@ p a :hover {
 p a img {
   display: none;
 }
-}
+
 
 .mask1 {
   background: url(assets/images/sky.gif);
@@ -639,14 +637,6 @@ ul {
   /* ordered list and unordered list styles */
 }
 
-
-blockquote {
-  /* blockquote element style */
-}
-
-hr {
-  /* horizontal rule style */
-}
 
 button,
 input[type="submit"],
@@ -938,7 +928,6 @@ a.return:hover {
   text-decoration: none;
 }
 
-#menu-list li:hover {}
 
 .close {
   position: absolute;
@@ -977,20 +966,6 @@ a.return:hover {
   font-family: sans-serif;
 }
 
-/* content */
-
-main {}
-
-summary {}
-
-
-
-
-
-
-/* GENERAL USABILITY */
-
-/* hide desktop mobile etc */
 
 .desktop {
   display: block;
@@ -1257,7 +1232,6 @@ summary {}
     display: none;
   }
 }
-}
 
 
 
@@ -1287,5 +1261,4 @@ summary {}
   p a img {
     display: none;
   }
-}
 }
