@@ -620,9 +620,8 @@ h5 {
 
 
 /* SMALL WEBSITE */
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
 
-  /* ALL TOYS BIG WEBSITE*/
   .toybox1 {
     background-color: transparent;
     left: 71vw;
