@@ -172,6 +172,78 @@ img {
   animation: scroll-left 25s linear infinite;
 }
 
+/* ALL TOYS BIG WEBSITE*/
+.toybox1 {
+  background-color: transparent;
+  left: 73vw;
+  top: 7vh;
+  width: 23vw;
+  z-index: 58;
+  transform: scaleX(-1);
+
+}
+
+.toybox12 {
+  background-color: transparent;
+  left: 18vw;
+  top: 7vh;
+  width: 23vw;
+  z-index: 58;
+}
+
+.toybox21 {
+  background-color: transparent;
+  left: 70vw;
+  top: 50vh;
+  width: 45vw;
+  z-index: 62;
+  transform: scaleX(-1);
+}
+
+.toybox22 {
+  background-color: transparent;
+  left: 0vw;
+  top: 50vh;
+  width: 45vw;
+  z-index: 62;
+}
+
+.toybox31 {
+  background-color: transparent;
+  left: 91vw;
+  top: 23vh;
+  width: 25vw;
+  z-index: 61;
+}
+
+.toybox32 {
+  background-color: transparent;
+  left: 1vw;
+  top: 23vh;
+  width: 25vw;
+  z-index: 61;
+  transform: scaleX(-1);
+}
+
+.toybox41 {
+  background-color: transparent;
+  left: 10vw;
+  top: 79vh;
+  width: 28vw;
+  z-index: 64;
+  transform: scaleX(-1);
+  mix-blend-mode: hard-light;
+}
+
+.toybox42 {
+  background-color: transparent;
+  left: 78vw;
+  top: 79vh;
+  width: 28vw;
+  z-index: 64;
+  mix-blend-mode: hard-light;
+}
+
 /* GENERAL STYLES */
 
 html {
@@ -220,6 +292,8 @@ article {
 
 i {
   margin-left: 3em;
+  line-height: 1.2em;
+  font-family: "IM Fell Great Primer";
   font-size: 2em;
 }
 
@@ -241,18 +315,17 @@ i {
   display: block;
 }
 
+
 .mask1 {
-  background: url(assets/images/sky.gif);
+  background-size: 190vh;
   margin-left: 0em;
   margin-top: 2vw;
   margin-right: 0em;
   margin-bottom: -3.5em;
   position: relative;
-  height: 100vh;
-  mask-origin: margin-box;
+  height: 10vh;
   mask-position: center;
-  -webkit-mask-size: 100%;
-  mask-size: contain;
+  mask-size: cover;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
@@ -414,14 +487,15 @@ a:focus-visible {
 h1 {
   /* h1 style */
   font-family: 'Sancreek';
-  font-size: 15vh;
+  font-size: 14vh;
   text-align: center;
   color: rgba(255, 255, 255);
   text-shadow: 0.8vw 0 black, 0 2px black, 2px 0 black, 0 2px black;
   line-height: 1.1;
-  margin-top: 10hv;
-  margin-bottom: 0;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 h1 br.responsive {
@@ -548,6 +622,76 @@ h5 {
 /* SMALL WEBSITE */
 @media all and (max-width: 800px) {
 
+  /* ALL TOYS BIG WEBSITE*/
+  .toybox1 {
+    background-color: transparent;
+    left: 71vw;
+    top: 7vh;
+    width: 30vw;
+    z-index: 58;
+    transform: scaleX(-1);
+
+  }
+
+  .toybox12 {
+    background-color: transparent;
+    left: 14vw;
+    top: 7vh;
+    width: 30vw;
+    z-index: 58;
+  }
+
+  .toybox21 {
+    background-color: transparent;
+    left: 70vw;
+    top: 18vh;
+    width: 45vw;
+    z-index: 58;
+    transform: scaleX(-1);
+  }
+
+  .toybox22 {
+    background-color: transparent;
+    left: 0vw;
+    top: 18vh;
+    width: 45vw;
+    z-index: 58;
+  }
+
+  .toybox31 {
+    background-color: transparent;
+    left: 88vw;
+    top: 46vh;
+    width: 25vw;
+    z-index: 58;
+  }
+
+  .toybox32 {
+    background-color: transparent;
+    left: 1vw;
+    top: 46vh;
+    width: 25vw;
+    z-index: 58;
+    transform: scaleX(-1);
+  }
+
+  .toybox41 {
+    background-color: transparent;
+    left: 1vw;
+    top: 66vh;
+    width: 26vw;
+    z-index: 58;
+    transform: scaleX(-1);
+  }
+
+  .toybox42 {
+    background-color: transparent;
+    left: 88vw;
+    top: 66vh;
+    width: 26vw;
+    z-index: 58;
+  }
+
   .showme {
     display: none;
   }
@@ -609,7 +753,7 @@ p a img {
 
 .mask1 {
   background: url(assets/images/sky.gif);
-  background-size: 120vh !important;
+  background-size: 120vh;
   -webkit-mask-image: none;
   mask-image: none;
   margin-left: 0em;
