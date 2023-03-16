@@ -249,7 +249,7 @@ img {
 html {
   font: var(--font-size) var(--font-family);
   color: var(--color-text);
-  background-color: var(--color-background);
+  background-color: rgb(206, 206, 206);
   scroll-behavior: smooth;
 }
 
