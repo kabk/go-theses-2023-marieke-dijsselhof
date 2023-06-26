@@ -45,19 +45,20 @@ $(document).ready(function () {
 
 });
 
-menuBtn.addEventListener('click', () => {
-    menuContent.classList.toggle('show');
-});
-
-window.addEventListener('scroll', () => {
-    const st = window.pageYOffset || document.documentElement.scrollTop;
-    if (st > lastScrollTop) {
-        menuContent.style.bottom = '-200px';
-    } else {
-        menuContent.style.bottom = '0';
-    }
-    lastScrollTop = st <= 0 ? 0 : st;
-});
+// menuBtn.addEventListener('click', () => {
+//     menuContent.classList.toggle('show');
+// });
+// window.addEventListener('scroll', () => {
+//     const st = window.pageYOffset || document.documentElement.scrollTop;
+//
+//     if (st > lastScrollTop) {
+//         menuContent.style.bottom = '-200px';
+//     } else {
+//         menuContent.style.bottom = '0';
+//     }
+//
+//     lastScrollTop = st <= 0 ? 0 : st;
+// });
 
 
 const links = document.querySelectorAll('article p a');
@@ -77,15 +78,15 @@ links.forEach(link => {
 
 
 
-new Vue({
-    el: '#app',
-    data() {
-        return {
-        }
-    },
-    computed: {},
-    methods: {}
-});
+// new Vue({
+//     el: '#app',
+//     data() {
+//         return {
+//         }
+//     },
+//     computed: {},
+//     methods: {}
+// });
 
 var vid = document.getElementById("myVideo");
 
